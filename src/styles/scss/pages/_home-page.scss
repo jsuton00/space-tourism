@@ -1,0 +1,71 @@
+.home-page {
+	background-image: url('../../assets/home/background-home-desktop.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	&-main-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		padding: $spacing-sm;
+	}
+}
+
+.hero-section {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	gap: $spacing-base;
+	&-text {
+		display: flex;
+		flex-direction: column;
+		gap: $spacing-sm;
+		width: 28.125rem;
+		margin: 0 auto;
+	}
+	&-title {
+		font-family: $barlow;
+		font-size: $font-size-xxl;
+		color: $veryPaleBlue;
+		text-transform: uppercase;
+
+		&-emphasis {
+			font-family: $bellefair;
+			font-size: 9.375rem;
+			color: $white;
+			text-transform: uppercase;
+		}
+	}
+	&-description {
+		font-family: $barlow;
+		font-size: $font-size-lg;
+		color: $veryPaleBlue;
+		text-align: justify;
+	}
+	&-button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 17.125rem;
+		margin: 0 auto;
+	}
+}
+
+.explore-button {
+	border: $spacing-primary solid $white;
+	background-color: $white;
+	border-radius: 50%;
+	width: 100%;
+	height: 17.125rem;
+	font-family: $bellefair;
+	font-size: $font-size-xxl;
+	color: $darkSaturatedBlue;
+	text-transform: uppercase;
+}

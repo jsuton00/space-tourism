@@ -1,0 +1,22 @@
+.nav-item {
+	width: 100%;
+	&-link {
+		padding: $spacing-base;
+		cursor: pointer;
+	}
+	&-text {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		gap: $spacing-sm;
+		width: 100%;
+		font-family: $barlow;
+		font-size: $font-size-lg;
+		color: $white;
+		text-transform: uppercase;
+	}
+	&-number {
+		font-weight: $barlow-medium;
+	}
+}

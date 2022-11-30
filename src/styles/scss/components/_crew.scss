@@ -1,0 +1,80 @@
+.carousel {
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+}
+
+.crew {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: $spacing-base;
+	width: 100%;
+	height: 100%;
+
+	&-text-section {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: $spacing-base;
+		width: 45.5rem;
+		height: 44.5rem;
+		padding: $spacing-base;
+
+		h3,
+		p {
+			width: 100%;
+		}
+	}
+
+	&-role {
+		display: flex;
+		flex-direction: row;
+		width: 13.375rem;
+		font-family: $bellefair;
+		font-size: $font-size-xxl;
+		color: $veryPaleBlue;
+		text-transform: uppercase;
+	}
+
+	&-name {
+		display: flex;
+		flex-direction: row;
+		width: 30.5rem;
+		font-family: $bellefair;
+		font-size: 3.5rem;
+		color: $white;
+		text-transform: uppercase;
+	}
+
+	&-bio {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 27.75rem;
+		padding: $spacing-base 0;
+		font-size: $font-size-lg;
+		color: $veryPaleBlue;
+		text-align: left;
+	}
+
+	&-image-section {
+		width: 35.5rem;
+		height: 44.5rem;
+	}
+
+	&-image {
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.control-dots {
+	display: flex;
+	width: auto;
+	padding: 0 $spacing-base;
+	transform: translate(0.0625rem, -5rem);
+}
