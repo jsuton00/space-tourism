@@ -24,7 +24,7 @@ body,
   #root {
     width: 100%;
     height: 100%;
-    overflow: auto;
+    overflow: hidden;
   }
 }
 
@@ -147,9 +147,13 @@ a:hover {
   gap: 1rem;
   width: 100%;
   padding: 0.5rem 2rem;
-}
-.destinations-tabs-navigation {
   transform: translateX(-16.02%);
+}
+@media (max-width: 992px) {
+  .destinations-tabs-navigation {
+    justify-content: center;
+    transform: translate(0, 15rem);
+  }
 }
 .destinations-tabs-navigation-item {
   background-color: transparent;
@@ -174,14 +178,31 @@ a:hover {
   height: 100%;
   margin: 0 auto;
 }
+@media (max-width: 992px) {
+  .destination {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
 .destination-image-section {
   width: 27.8125rem;
   height: 27.8125rem;
+}
+@media (max-width: 992px) {
+  .destination-image-section {
+    width: 15rem;
+    height: 15rem;
+  }
 }
 .destination-image {
   width: 100%;
   height: 100%;
   transform: translate(-23%);
+}
+@media (max-width: 992px) {
+  .destination-image {
+    transform: translate(0, -7.4rem);
+  }
 }
 .destination-text-section {
   width: 27.8125rem;
@@ -194,10 +215,22 @@ a:hover {
   text-transform: uppercase;
   width: 100%;
 }
+@media (max-width: 992px) {
+  .destination-name {
+    font-size: 6.25rem;
+    text-align: center;
+  }
+}
 .destination-description {
   font-size: 1.25rem;
   color: #d0d6f9;
   padding-bottom: 2rem;
+}
+@media (max-width: 992px) {
+  .destination-description {
+    font-size: 1rem;
+    text-align: center;
+  }
 }
 .destination-distance-travel {
   display: flex;
@@ -216,6 +249,11 @@ a:hover {
   color: #fff;
   text-transform: uppercase;
 }
+@media (max-width: 992px) {
+  .destination-distance-travel {
+    justify-content: center;
+  }
+}
 
 .carousel {
   width: 100%;
@@ -232,6 +270,11 @@ a:hover {
   width: 100%;
   height: 100%;
 }
+@media (max-width: 992px) {
+  .crew {
+    flex-direction: column;
+  }
+}
 .crew-text-section {
   display: flex;
   flex-direction: column;
@@ -239,12 +282,22 @@ a:hover {
   align-items: center;
   gap: 1rem;
   width: 45.5rem;
-  height: 44.5rem;
   padding: 1rem;
+}
+@media (max-width: 992px) {
+  .crew-text-section {
+    width: 30rem;
+  }
 }
 .crew-text-section h3,
 .crew-text-section p {
   width: 100%;
+}
+@media (max-width: 992px) {
+  .crew-text-section h3,
+  .crew-text-section p {
+    text-align: center;
+  }
 }
 .crew-role {
   display: flex;
@@ -255,6 +308,12 @@ a:hover {
   color: #d0d6f9;
   text-transform: uppercase;
 }
+@media (max-width: 992px) {
+  .crew-role {
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+}
 .crew-name {
   display: flex;
   flex-direction: row;
@@ -263,6 +322,12 @@ a:hover {
   font-size: 3.5rem;
   color: #fff;
   text-transform: uppercase;
+}
+@media (max-width: 992px) {
+  .crew-name {
+    justify-content: center;
+    font-size: 2rem;
+  }
 }
 .crew-bio {
   display: flex;
@@ -274,12 +339,23 @@ a:hover {
   color: #d0d6f9;
   text-align: left;
 }
+@media (max-width: 992px) {
+  .crew-bio {
+    justify-content: center;
+    font-size: 1rem;
+  }
+}
 .crew-image-section {
   width: 35.5rem;
   height: 44.5rem;
 }
+@media (max-width: 992px) {
+  .crew-image-section {
+    width: 18.75rem;
+    height: 100%;
+  }
+}
 .crew-image {
-  position: relative;
   width: 100%;
   height: 100%;
 }
@@ -289,6 +365,122 @@ a:hover {
   width: auto;
   padding: 0 1rem;
   transform: translate(0.0625rem, -5rem);
+}
+@media (max-width: 992px) {
+  .control-dots {
+    justify-content: center;
+    transform: translateY(-28rem);
+  }
+}
+
+.technology {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+@media (max-width: 992px) {
+  .technology {
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}
+.technology-tabs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  height: 32.975rem;
+}
+@media (max-width: 992px) {
+  .technology-tabs {
+    flex-direction: column;
+  }
+}
+.technology-tabs-navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 5rem;
+  height: 100%;
+  padding: 0;
+}
+@media (max-width: 992px) {
+  .technology-tabs-navigation {
+    flex-direction: row;
+    width: 100%;
+    height: 5rem;
+  }
+}
+.technology-tabs-navigation-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  font-family: "Bellefair", serif;
+  font-size: 1.5rem;
+  border: 0.0625rem solid #fff;
+  background-color: transparent;
+  border-radius: 50%;
+  color: #fff;
+}
+.technology-tabs-navigation-item:active, .technology-tabs-navigation-item:hover, .technology-tabs-navigation-item:focus {
+  background-color: #fff;
+  color: #0b0d17;
+}
+.technology-text-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 27.75rem;
+  height: 100%;
+  padding: 1rem;
+  margin: 0 auto;
+}
+.technology-text-section h3,
+.technology-text-section p {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.technology-subheading {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.5rem;
+  color: #d0d6f9;
+  text-transform: uppercase;
+}
+.technology-name {
+  font-family: "Bellefair", serif;
+  font-size: 3rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+.technology-description {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.25rem;
+  color: #d0d6f9;
+}
+.technology-image-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 32.1875rem;
+  height: 100%;
+  padding: 1rem;
+}
+.technology-image {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
 }
 
 .page {
@@ -306,6 +498,11 @@ a:hover {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .home-page {
+    background-image: url("../../assets/home/background-home-tablet.jpg");
+  }
 }
 .home-page-main-content {
   display: flex;
@@ -326,12 +523,22 @@ a:hover {
   width: 100%;
   gap: 1rem;
 }
+@media (min-width: 768px) and (max-width: 992px) {
+  .hero-section {
+    gap: 2rem;
+  }
+}
 .hero-section-text {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   width: 28.125rem;
   margin: 0 auto;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .hero-section-text {
+    transform: translateY(-9%);
+  }
 }
 .hero-section-title {
   font-family: "Barlow Condensed", sans-serif;
@@ -377,6 +584,13 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media (min-width: 768px) and (max-width: 992px) {
+  .destination-page {
+    background-image: url("../../assets/destination/background-destination-tablet.jpg");
+    width: 100%;
+    height: 100%;
+  }
+}
 .destination-page-main-content {
   display: flex;
   flex-direction: column;
@@ -396,6 +610,12 @@ a:hover {
   color: #fff;
   text-transform: uppercase;
 }
+@media (max-width: 992px) {
+  .destination-page-title {
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+}
 .destination-page-title-number {
   font-weight: 600;
   color: #3a3c44;
@@ -407,6 +627,11 @@ a:hover {
   align-items: center;
   width: 100%;
   height: 29.5rem;
+}
+@media (max-width: 992px) {
+  .destination-tabs-section {
+    height: 100%;
+  }
 }
 
 .crew-page {
@@ -434,6 +659,13 @@ a:hover {
   color: #fff;
   text-transform: uppercase;
 }
+@media (max-width: 992px) {
+  .crew-page-title {
+    justify-content: center;
+    font-size: 1.5rem;
+    transform: translateY(1rem);
+  }
+}
 .crew-page-title-number {
   font-weight: 600;
   color: #3a3c44;
@@ -442,6 +674,11 @@ a:hover {
 .crew-carousel-section {
   width: 100%;
   height: 44.5rem;
+}
+@media (max-width: 992px) {
+  .crew-carousel-section {
+    height: 100%;
+  }
 }
 
 .technology-page {
@@ -469,6 +706,13 @@ a:hover {
   color: #fff;
   text-transform: uppercase;
 }
+@media (max-width: 992px) {
+  .technology-page-title {
+    justify-content: center;
+    font-size: 1.5rem;
+    transform: translateY(1rem);
+  }
+}
 .technology-page-title-number {
   font-weight: 600;
   color: #3a3c44;
@@ -480,4 +724,9 @@ a:hover {
   align-items: center;
   width: 100%;
   height: 29.5rem;
+}
+@media (max-width: 992px) {
+  .technology-tabs-section {
+    height: 100%;
+  }
 }

@@ -4,6 +4,12 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 
+	@media (min-width: 768px) and (max-width: 992px) {
+		background-image: url('../../assets/destination/background-destination-tablet.jpg');
+		width: 100%;
+		height: 100%;
+	}
+
 	&-main-content {
 		display: flex;
 		flex-direction: column;
@@ -24,6 +30,11 @@
 		color: $white;
 		text-transform: uppercase;
 
+		@media (max-width: 992px) {
+			justify-content: center;
+			font-size: $font-size-xl;
+		}
+
 		&-number {
 			font-weight: $barlow-semibold;
 			color: #3a3c44;
@@ -37,4 +48,8 @@
 	align-items: center;
 	width: 100%;
 	height: 29.5rem;
+
+	@media (max-width: 992px) {
+		height: 100%;
+	}
 }

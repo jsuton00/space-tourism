@@ -13,6 +13,10 @@
 	width: 100%;
 	height: 100%;
 
+	@media (max-width: 992px) {
+		flex-direction: column;
+	}
+
 	&-text-section {
 		display: flex;
 		flex-direction: column;
@@ -20,12 +24,19 @@
 		align-items: center;
 		gap: $spacing-base;
 		width: 45.5rem;
-		height: 44.5rem;
 		padding: $spacing-base;
+
+		@media (max-width: 992px) {
+			width: 30rem;
+		}
 
 		h3,
 		p {
 			width: 100%;
+
+			@media (max-width: 992px) {
+				text-align: center;
+			}
 		}
 	}
 
@@ -37,6 +48,11 @@
 		font-size: $font-size-xxl;
 		color: $veryPaleBlue;
 		text-transform: uppercase;
+
+		@media (max-width: 992px) {
+			justify-content: center;
+			font-size: $font-size-xl;
+		}
 	}
 
 	&-name {
@@ -47,6 +63,11 @@
 		font-size: 3.5rem;
 		color: $white;
 		text-transform: uppercase;
+
+		@media (max-width: 992px) {
+			justify-content: center;
+			font-size: $font-size-xxl;
+		}
 	}
 
 	&-bio {
@@ -58,15 +79,24 @@
 		font-size: $font-size-lg;
 		color: $veryPaleBlue;
 		text-align: left;
+
+		@media (max-width: 992px) {
+			justify-content: center;
+			font-size: $font-size-base;
+		}
 	}
 
 	&-image-section {
 		width: 35.5rem;
 		height: 44.5rem;
+
+		@media (max-width: 992px) {
+			width: 18.75rem;
+			height: 100%;
+		}
 	}
 
 	&-image {
-		position: relative;
 		width: 100%;
 		height: 100%;
 	}
@@ -77,4 +107,9 @@
 	width: auto;
 	padding: 0 $spacing-base;
 	transform: translate(0.0625rem, -5rem);
+
+	@media (max-width: 992px) {
+		justify-content: center;
+		transform: translateY(-28rem);
+	}
 }
