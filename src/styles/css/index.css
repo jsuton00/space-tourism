@@ -414,6 +414,7 @@ a:hover {
     flex-direction: row;
     width: 100%;
     height: 5rem;
+    transform: translateY(21rem);
   }
 }
 .technology-tabs-navigation-item {
@@ -445,11 +446,22 @@ a:hover {
   padding: 1rem;
   margin: 0 auto;
 }
+@media (max-width: 992px) {
+  .technology-text-section {
+    transform: translateY(21.5rem);
+  }
+}
 .technology-text-section h3,
 .technology-text-section p {
   display: flex;
   align-items: center;
   width: 100%;
+}
+@media (max-width: 992px) {
+  .technology-text-section h3,
+  .technology-text-section p {
+    justify-content: center;
+  }
 }
 .technology-subheading {
   font-family: "Barlow Condensed", sans-serif;
@@ -468,6 +480,12 @@ a:hover {
   font-size: 1.25rem;
   color: #d0d6f9;
 }
+@media (max-width: 992px) {
+  .technology-description {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
 .technology-image-section {
   display: flex;
   flex-direction: column;
@@ -477,10 +495,22 @@ a:hover {
   height: 100%;
   padding: 1rem;
 }
+@media (max-width: 992px) {
+  .technology-image-section {
+    transform: translateY(-20.3rem);
+  }
+}
 .technology-image {
   width: 100%;
   height: 100%;
   margin: 0 auto;
+}
+@media (max-width: 992px) {
+  .technology-image {
+    max-width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
 }
 
 .page {

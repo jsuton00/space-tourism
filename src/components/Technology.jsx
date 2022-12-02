@@ -4,7 +4,7 @@ import { technologyTabButtons } from '../constants/technologyTabButtons';
 import TechnologyItem from './TechnologyItem';
 
 const Technology = (props) => {
-	const { technology } = props;
+	const { technology, width } = props;
 	return (
 		<Tabs className="technology-tabs">
 			<TabList className="technology-tabs-navigation">
@@ -23,7 +23,9 @@ const Technology = (props) => {
 						<TabPanel key={tech.name} className="technology-tabs-content">
 							<TechnologyItem
 								name={tech.name}
-								image={tech.images.portrait}
+								image={
+									width > 992 ? tech.images.portrait : tech.images.landscape
+								}
 								description={tech.description}
 							/>
 						</TabPanel>

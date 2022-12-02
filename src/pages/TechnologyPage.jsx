@@ -3,7 +3,8 @@ import data from '../assets/data.json';
 import Header from '../components/Header';
 import Technology from '../components/Technology';
 
-const TechnologyPage = () => {
+const TechnologyPage = (props) => {
+	const { width } = props;
 	const [technology] = useState(data.technology);
 	return (
 		<div className="page technology-page">
@@ -15,7 +16,7 @@ const TechnologyPage = () => {
 						<span className="technology-page-title-text">Space Launch 101</span>
 					</h1>
 					<div className="crew-carousel-section">
-						{technology && <Technology technology={technology} />}
+						{technology && <Technology technology={technology} width={width} />}
 					</div>
 				</main>
 			</div>
