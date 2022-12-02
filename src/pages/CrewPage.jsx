@@ -3,12 +3,18 @@ import Header from '../components/Header';
 import data from '../assets/data.json';
 import Crew from '../components/Crew';
 
-const CrewPage = () => {
+const CrewPage = (props) => {
+	const { width, isOpen, handleToggle, handleClose } = props;
 	const [crew] = useState(data.crew);
 	return (
 		<div className="page crew-page">
 			<div className="page-content crew-page-content container">
-				<Header />
+				<Header
+					width={width}
+					isOpen={isOpen}
+					handleToggle={handleToggle}
+					handleClose={handleClose}
+				/>
 				<main className="page-main-content crew-page-main-content">
 					<h1 className="crew-page-title">
 						<span className="crew-page-title-number">02</span>

@@ -2,14 +2,24 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { NAV_ITEM_LINKS } from '../constants/navItemLinks';
 
-const Navbar = () => {
+const Navbar = (props) => {
+	const { width, handleClose } = props;
+
+	const onClick = () => {
+		return handleClose();
+	};
 	return (
-		<nav className="header-navbar-section">
+		<nav
+			className={`header-navbar-section ${
+				width > 992 ? '' : 'header-navmenu-section'
+			}`}
+		>
 			{NAV_ITEM_LINKS.length > 0 &&
 				NAV_ITEM_LINKS.map((link) => {
 					return (
 						<Link
 							key={link.navItemLinkNumber}
+							onClick={onClick}
 							to={`/${
 								link.navItemLinkText === 'home' ? '' : link.navItemLinkText
 							}`}

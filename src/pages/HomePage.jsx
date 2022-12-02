@@ -2,7 +2,8 @@ import React from 'react';
 import { useNavigate } from 'react-router';
 import Header from '../components/Header';
 
-const HomePage = () => {
+const HomePage = (props) => {
+	const { width, isOpen, handleToggle, handleClose } = props;
 	let navigate = useNavigate();
 
 	const onClick = () => {
@@ -11,7 +12,12 @@ const HomePage = () => {
 	return (
 		<div className="page home-page">
 			<div className="page-content home-page-content container">
-				<Header />
+				<Header
+					width={width}
+					isOpen={isOpen}
+					handleToggle={handleToggle}
+					handleClose={handleClose}
+				/>
 				<main className="page-main-content home-page-main-content">
 					<div className="hero-section">
 						<div className="hero-section-text">

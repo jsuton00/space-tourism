@@ -26,3 +26,14 @@
 		width: 100%;
 	}
 }
+
+@media (max-width: 992px) {
+	.header-navmenu-section {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		transform: translateY(-29%);
+	}
+}

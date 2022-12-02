@@ -28,6 +28,7 @@
 
 		@media (max-width: 992px) {
 			width: 30rem;
+			transform: translateY(30rem);
 		}
 
 		h3,
@@ -83,6 +84,7 @@
 		@media (max-width: 992px) {
 			justify-content: center;
 			font-size: $font-size-base;
+			transform: translateY(-9%);
 		}
 	}
 
@@ -93,6 +95,7 @@
 		@media (max-width: 992px) {
 			width: 18.75rem;
 			height: 100%;
+			transform: translateY(-17rem);
 		}
 	}
 
@@ -110,6 +113,6 @@
 
 	@media (max-width: 992px) {
 		justify-content: center;
-		transform: translateY(-28rem);
+		transform: translateY(-14.7rem);
 	}
 }
